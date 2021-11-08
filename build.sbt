@@ -19,12 +19,9 @@ lazy val root = (project in file("."))
   .settings(
     name := "example", 
     squidSettings,
+    autoCompilerPlugins := true,
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "org.scalameta" %% "scalameta" % "4.4.20",
+    libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+    libraryDependencies += "de.sciss" %% "coroutines" % "0.1.0",
   )
-
-lazy val generated = (project in file("generated"))
-  .settings(
-    name := "example", 
-    libraryDependencies += scalaTest % Test,
-  ).dependsOn(root)
