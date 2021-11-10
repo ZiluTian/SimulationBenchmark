@@ -1,12 +1,7 @@
-package example
+package ticktalk.example
+package gameOfLife
 
-import scala.collection.mutable.{Map => MutMap}
-import meta.deep.IR
-import meta.deep.IR.TopLevel._
-import meta.compile.compileSims
-import meta.runtime.Actor
-import scala.util.Random
-
+import squid.quasi.lift
 import scala.collection.mutable.{Map => MutMap}
 
 import lib.Grid.Torus2D

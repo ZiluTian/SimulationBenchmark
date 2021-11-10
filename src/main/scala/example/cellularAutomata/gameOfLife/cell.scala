@@ -1,9 +1,8 @@
-package example
+package ticktalk.example
+package gameOfLife
 
 import meta.classLifting.SpecialInstructions._
 import squid.quasi.lift
-import meta.runtime.{Actor, Future}
-
 
 /**
   * Conway's game of life
